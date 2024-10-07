@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="assets/survey.png" rel="icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<header class="">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey Form is to Improve our products and services</p>
+</header>
+    
+    <form id="survey-form">
+        <div class="text">
+            <label id="name-label" for="name">
+                Enter Your Name:
+                </label>
+                <input id="name" type="text" name="name" placeholder="Enter Name" required />
+        </div>
+
+        <div class="text" >
+            <label id="email-label" for="email">
+                Enter Your Email: 
+                </label>
+                <input id="email" type="email" name="email" placeholder="Enter Email" required />
+        </div>
+
+        <div class="text" >
+            <label id="number-label" for="age">
+                Enter Your Age: 
+                </label>
+                <input id="number" name="age" max="120" min="13" type="number" placeholder="Age" required />
+        </div>
+        <div>
+            <p class="left">Which Gaming Platform You use:</p>
+            <select id="dropdown">
+            <option value="">Select</option>
+            <option value="Ps5">Ps5</option>
+            <option value="XBox">XBox</option>
+            <option value="Sream">Stream</option>
+            <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="text">
+            <hr>
+            <p>Would Like To Subscribe to our Blog</p>
+            <label>
+                <input name="user-choice" value="Definitely" type="radio" class="radio" checked /> Definitely
+            </label>
+            <label>
+                <input name="user-choice" value="Not Sure" type="radio" class="radio" /> Not Sure 
+            </label>
+            <label>    
+                <input name="user-choice" value="Maybe Later " type="radio" class="radio" /> Maybe Later
+            </label>
+        </div>
+
+        <div>
+            <hr>
+            <p>
+                What is Your Favorite Books you would like to suggest
+            </p>
+            <textarea placeholder="My Favorite Books...."></textarea>
+            <hr>
+        </div>
+
+        <div class="">
+            <p class="left">What are Your Hobbies</p>
+            <label class="left">
+                <input type="checkbox" id="hiking" name="hobbies" value="hiking" />
+                Hiking
+            </label>
+            <label class="left">
+                <input type="checkbox" id="Reading" name="hobbies" value="Reading" />
+                Reading
+            </label>
+            <label class="left" class="below">
+                <input type="checkbox" id="Gaming" name="hobbies" value="Gaming" />
+                Gaming
+            </label>
+            <hr>
+        </div>
+
+        <div class="button">
+            <button class="button" id="submit" type="submit">SUBMIT</button>
+        </div>
+
+</div>
+
+</form>
+</body>
+</html>
